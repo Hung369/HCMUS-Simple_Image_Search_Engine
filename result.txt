@@ -1,0 +1,6 @@
+Result of the survey
+Memory size: 15984 bytes
+Runtime: 0:00:08.309292
+Recall = 100.0%
+Precision = 40.0%
+F1 = 57.142857142857146%
