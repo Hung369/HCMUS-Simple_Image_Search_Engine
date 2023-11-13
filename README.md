@@ -48,16 +48,19 @@ File ` groundtruth.json ` was obtained by processing the names of the files (by 
 We will extract all the image into seperate folders based on ` groundtruth.json `
 
 * Query folder
+
 | Folder name | Description                                   |
 | :---------- | :------------------------------------------   |
 | `input` | Contains all images with the tag `query` in json file |
 
 * Database folder
+
 | Folder name | Description                                   |
 | :---------- | :-------------------------------------------  |
 | `images` | Contains all images with the tag `similar` in json file|
 
 * Result folder
+
 | Folder name | Description                                   |
 | :---------- | :------------------------------------------   |
 | `output` | An empty folder, use to store the result images after retrieval|
