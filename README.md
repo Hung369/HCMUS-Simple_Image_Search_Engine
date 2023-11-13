@@ -24,7 +24,7 @@ Install my project with these following libraries in virtual environment (venv):
 
 #### Dataset Link
 
-```http
+```
   https://www.kaggle.com/datasets/vadimshabashov/inria-holidays
 ```
 
@@ -37,7 +37,7 @@ Structure:
 
 * images contains images
 * groundtruth.json contains labels for each scene in the form:
-```http
+```
   'scene_number':
         'query': image_path,
         'similar': [path to similar images]
@@ -49,17 +49,17 @@ We will extract all the image into seperate folders based on ` groundtruth.json 
 
 * Query folder
 | Folder name | Description                                   |
-| :---------- | :----------------------------------------------   |
+| :---------- | :------------------------------------------   |
 | `input` | Contains all images with the tag `query` in json file |
 
 * Database folder
 | Folder name | Description                                   |
-| :---------- | :----------------------------------------------   |
+| :---------- | :-------------------------------------------  |
 | `images` | Contains all images with the tag `similar` in json file|
 
 * Result folder
 | Folder name | Description                                   |
-| :---------- | :----------------------------------------------   |
+| :---------- | :------------------------------------------   |
 | `output` | An empty folder, use to store the result images after retrieval|
 
 
