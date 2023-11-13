@@ -24,7 +24,7 @@ Install my project with these following libraries in virtual environment (venv):
 
 #### Dataset Link
 
-```
+```http
   https://www.kaggle.com/datasets/vadimshabashov/inria-holidays
 ```
 
@@ -37,7 +37,7 @@ Structure:
 
 * images contains images
 * groundtruth.json contains labels for each scene in the form:
-```
+```http
   'scene_number':
         'query': image_path,
         'similar': [path to similar images]
