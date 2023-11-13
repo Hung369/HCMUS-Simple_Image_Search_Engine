@@ -1,5 +1,95 @@
-# HCMUS-Simple_Image_Search_Engine
-Create an Image Search Engine for Irina Holidays Dataset<br>
-Link dataset: https://www.kaggle.com/datasets/vadimshabashov/inria-holidays</br>
-Link images folder:</br>
-Link input images folder (input folder):</br>
+
+# Image Search Engine
+
+A Simple Search Engine for Irina Holidays Dataset
+
+
+## Dependencies
+
+* Python 3.10.11 is needed before installing program.
+* Any Python IDE can be use for this project, recommend: VSCode and Pycharm
+* OS: Windows 10 and 11
+## Installation
+
+Install my project with these following libraries in virtual environment (venv):
+
+```bash
+  pip install pandas
+  pip install opencv-python
+  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+  pip install numpy
+```
+    
+## Dataset
+
+#### Dataset Link
+
+```http
+  https://www.kaggle.com/datasets/vadimshabashov/inria-holidays
+```
+
+#### About Dataset
+The Holidays dataset is a set of holidays photos. The dataset includes a very large variety of scene types (natural, man-made, water and fire effects, etc) and images are in high resolution.
+
+The dataset contains 500 image groups, each of which represents a distinct scene or object.
+
+Structure:
+
+* images contains images
+* groundtruth.json contains labels for each scene in the form:
+```http
+  'scene_number':
+        'query': image_path,
+        'similar': [path to similar images]
+```
+File ` groundtruth.json ` was obtained by processing the names of the files (by authors: "the first image of each group is the query image and the correct retrieval results are the other images of the group").
+
+#### Extract all the images into folders
+We will extract all the image into seperate folders based on ` groundtruth.json `
+
+* Query folder
+| Folder name | Description                                   |
+| :---------- | :----------------------------------------------   |
+| `input` | Contains all images with the tag `query` in json file |
+
+* Database folder
+| Folder name | Description                                   |
+| :---------- | :----------------------------------------------   |
+| `images` | Contains all images with the tag `similar` in json file|
+
+* Result folder
+| Folder name | Description                                   |
+| :---------- | :----------------------------------------------   |
+| `output` | An empty folder, use to store the result images after retrieval|
+
+
+
+
+## Deployment
+
+After setting up all folders and installing all necessary libraries, use bellow command to run the program
+
+```bash
+  python -m main --input <path to an image in input folder>
+```
+
+Example: 
+```bash
+python -m main --input .\input\112400.jpg
+```
+After execution, all retrieved images will be stored in `output` folder and runtime, Recall, Precision, F1 score and other statistics are recorded in `result.txt`.
+
+Furthermore, all images's name and semantic features are stored in `names.pkl` and `feature.pkl` respectively.
+
+#### NOTE: 
+if you run program without having any mentioned `.pkl` files, `names.pkl` and `feature.pkl` will be generated after execution. However, the program is going to retrieve all similar images base on these `.pkl` files if you already have it in project folder.
+
+## Result Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Authors
+
+[@manhhung](https://github.com/Hung369)
+
