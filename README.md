@@ -18,6 +18,7 @@ Install my project with these following libraries in virtual environment (venv):
   pip install opencv-python
   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
   pip install numpy
+  pip install tqdm
 ```
     
 ## Dataset
