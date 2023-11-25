@@ -66,7 +66,10 @@ We will extract all the image into seperate folders based on ` groundtruth.json 
 | :---------- | :------------------------------------------   |
 | `output` | An empty folder, use to store the result images after retrieval|
 
-
+After creating `input` and `output` folders, run `split.py` to move all query images to input folders.
+```bash
+  python split.py
+```
 
 
 ## Deployment
