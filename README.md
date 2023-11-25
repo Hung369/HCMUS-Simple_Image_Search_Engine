@@ -85,7 +85,8 @@ Example:
 python -m main --input .\input\112400.jpg
 ```
 After execution, all retrieved images will be stored in `output` folder and runtime, Recall, Precision, F1 score and other statistics are recorded in `result.txt`.
-The program will return top 20 images which have similarity to input image, measured by Euclidean distance
+The program will return top 20 images which have similarity to input image, measured by Euclidean distance.
+
 Furthermore, all images's name and semantic features are stored in `names.pkl` and `feature.pkl` respectively.
 
 #### NOTE: 
@@ -93,6 +94,7 @@ if you run program without having any mentioned `.pkl` files, `names.pkl` and `f
 
 ## Result Screenshot
 All statistics after execution this command ` python -m main --input .\input\112400.jpg `
+
 You can know how long does it take to query input image, memory size has been used and F1, Precision and Recall scores.
 
 ![Screenshot 2023-11-13 153305](https://github.com/Hung369/HCMUS-Simple_Image_Search_Engine/assets/81510821/3ac75f68-5a0b-491e-8216-2ad04d6f79ff)
