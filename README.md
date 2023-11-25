@@ -1,7 +1,7 @@
 
 # Image Search Engine
 
-A Simple Search Engine for Irina Holidays Dataset
+A Simple Search Engine for Irina Holidays Dataset by using MobileNetV2 to extract feature vectors. 
 
 
 ## Dependencies
@@ -94,6 +94,8 @@ All statistics after execution this command ` python -m main --input .\input\112
 
 ![Screenshot 2023-11-13 153305](https://github.com/Hung369/HCMUS-Simple_Image_Search_Engine/assets/81510821/3ac75f68-5a0b-491e-8216-2ad04d6f79ff)
 
+## Demo
+Video demo link:
 
 ## Authors
 
