@@ -95,7 +95,7 @@ All statistics after execution this command ` python -m main --input .\input\112
 ![Screenshot 2023-11-13 153305](https://github.com/Hung369/HCMUS-Simple_Image_Search_Engine/assets/81510821/3ac75f68-5a0b-491e-8216-2ad04d6f79ff)
 
 ## Demo
-Video demo link:
+Video demo link: https://www.loom.com/share/ca31102067e24684aa93d4ef317de8a1?sid=970cba5c-1f8a-4950-8978-f35a221f2bdb
 
 ## Authors
 
